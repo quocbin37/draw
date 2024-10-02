@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram">
+    <mxGraphModel dx="945" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Actors -->
+        <mxCell id="actor1" value="Quản trị viên" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="50" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="actor2" value="Giảng viên" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="50" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="actor3" value="Sinh viên" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="50" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Cases -->
+        <mxCell id="usecase1" value="Đăng nhập/Đăng xuất" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="60" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usecase2" value="Quản lý sinh viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usecase3" value="Quản lý khóa học" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usecase4" value="Quản lý bài tập" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="usecase5" value="Thanh toán trực tuyến" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Include Relationships -->
+        <mxCell id="include1" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;entryX=0.5;entryY=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="usecase1" target="usecase2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Extend Relationships -->
+        <mxCell id="extend1" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=red;" edge="1" parent="1" source="usecase4" target="usecase5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connections (actors to use cases) -->
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="actor1" target="usecase1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="actor2" target="usecase3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="actor3" target="usecase4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
